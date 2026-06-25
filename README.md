@@ -9,11 +9,7 @@ global equity, emerging market equity, global bonds, UK gilts, gold) and combine
 
 ## How it works
 
-Each asset class is represented by one ETF, with prices pulled from Yahoo Finance. The weights are set so that as risk tolerance goes up, the equity share rises and the bond share falls, with a small fixed holding in gold for diversification.
-
-The backtest sets each portfolio to its target weights and then lets those weights drfit as the market moves, resetting them to target once a year.
-
-Modelling the drift matters. If you skip this, the test quietly assumes the portfolio stays perfectly balanced, which understates the risk it actually builds up over time.
+Each asset class is represented by one ETF, with prices pulled from Yahoo Finance. The weights are set so that as risk tolerance goes up, the equity share rises and the bond share falls, with a small fixed holding in gold for diversification. The backtest sets each portfolio to its target weights and then lets those weights drfit as the market moves, resetting them to target once a year. Modelling the drift matters. If you skip this, the test quietly assumes the portfolio stays perfectly balanced, which understates the risk it actually builds up over time.
 
 To explain returns, the project uses Brinson attribution. This splits a portfolio's return against a 60/40 benchmark into two parts: how much came from the asset allocation, meaning how much sits in each asset class, and how much came from selection, meaning what is held within each class. Because the portfolios use index trackers, the selection part comes out close to zero, which is what you would expect when you are not picking active funds. 
 
