@@ -5,7 +5,7 @@ A Python project that builds and tests three model portfolios for different leve
 ## What it does
 
 It starts from a handful of low-cost ETFs covering the main asset classes (UK equity,
-global equity, emerging market equity, global bonds, UK gilts, gold) and combines them into three portfolios (Cautious, Balanced,Adventurous). It then backtets each one, rebalances them once a year, and works out where the returns came from. The output is a one-page summary for each portfolio.
+global equity, emerging market equity, global bonds, UK gilts, gold) and combines them into three portfolios (Cautious, Balanced, Adventurous). It then backtets each one, rebalances them once a year, and works out where the returns came from. The output is a one-page summary for each portfolio.
 
 ## How it works
 
